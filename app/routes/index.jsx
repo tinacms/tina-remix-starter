@@ -1,32 +1,35 @@
-export default function Index() {
+import { TinaMarkdown } from "tinacms/dist/rich-text";
+import { Layout } from "~/components/Layout";
+import { useTina } from "tinacms/dist/react";
+import { client } from ".tina/__generated__/client";
+import { useLoaderData } from "@remix-run/react";
+
+export default function Home() {
+  const { props } = useLoaderData();
+  const { data } = useTina({
+    query: props.query,
+    variables: props.variables,
+    data: props.data,
+  });
+
+  const content = data.page.body;
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <Layout>
+      <TinaMarkdown content={content} />
+    </Layout>
   );
 }
+
+export const loader = async () => {
+  const { data, query, variables } = await client.queries.page({
+    relativePath: "home.mdx",
+  });
+
+  return {
+    props: {
+      data,
+      query,
+      variables,
+    },
+  };
+};

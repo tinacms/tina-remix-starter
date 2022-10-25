@@ -17,8 +17,10 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-        <Meta />
         <Links />
+        <title>Tina App</title>
+        <meta name="description" content="A TinaCMS Application" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
         <Outlet />
