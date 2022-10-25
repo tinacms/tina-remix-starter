@@ -1,3 +1,5 @@
+import { Link } from "@remix-run/react";
+
 export const Layout = (props) => {
   return (
     <div
@@ -6,9 +8,9 @@ export const Layout = (props) => {
       }}
     >
       <header>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
         {' | '}
-        <a href="/posts">Posts</a>
+        <Link to="/posts">Posts</Link>
       </header>
       <main>{props.children}</main>
     </div>

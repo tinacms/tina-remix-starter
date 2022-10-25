@@ -1,12 +1,11 @@
 import { useLoaderData } from "@remix-run/react";
 import { useTina } from "tinacms/dist/react";
 
-import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { Layout } from "~/components/Layout";
 import { client } from ".tina/__generated__/client";
 
-
 export default function Home() {
+  // data passes though in production mode and data is updated to the sidebar data in edit-mode
   const { props } = useLoaderData();
   const { data } = useTina({
     query: props.query,
@@ -14,17 +13,24 @@ export default function Home() {
     data: props.data,
   });
 
-  const content = data.page.body;
   return (
     <Layout>
-      <TinaMarkdown content={content} />
+      <code>
+        <pre
+          style={{
+            backgroundColor: "lightgray",
+          }}
+        >
+          {JSON.stringify(data.post, null, 2)}
+        </pre>
+      </code>
     </Layout>
   );
 }
 
-export const loader = async () => {
-  const { data, query, variables } = await client.queries.page({
-    relativePath: "home.mdx",
+export const loader = async ({ params }) => {
+  const { data, query, variables } = await client.queries.post({
+    relativePath: params.slug + ".md",
   });
 
   return {
