@@ -1,19 +1,44 @@
-# Welcome to Remix!
+This is a [Tina CMS](https://tina.io/) project.
 
-- [Remix Docs](https://remix.run/docs)
+## Local Development
 
-## Development
+Install the project's dependencies:
 
-To run your Remix app locally, make sure your project's local dependencies are installed:
-
-```sh
-yarn
+```
+yarn install
 ```
 
-Afterwards, start the Remix development server like so:
+Run the project locally:
 
-```sh
+```
 yarn dev
 ```
 
-Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Building the Starter Locally (Using the hosted content API)
+
+Replace the `.env.example`, with `.env`
+
+```
+NEXT_PUBLIC_TINA_CLIENT_ID=<get this from the project you create at app.tina.io>
+TINA_TOKEN=<get this from the project you create at app.tina.io>
+NEXT_PUBLIC_TINA_BRANCH=<Specify the branch with Tina configured>
+```
+
+Build the project:
+
+```bash
+yarn build
+```
+
+## Learn More
+
+To learn more about Tina, take a look at the following resources:
+
+- [Tina Docs](https://tina.io/docs)
+- [Getting starter guide](https://tina.io/docs/introduction/using-starter/)
+
+You can check out [Tina Github repository](https://github.com/tinacms/tinacms) - your feedback and contributions are welcome!
+
+## [Deploy on Vercel](https://tina.io/docs/tina-cloud/connecting-site/)
