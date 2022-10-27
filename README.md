@@ -43,6 +43,7 @@ This project can easily be deployed using services like [Netlify](https://www.ne
 ### Build settings
 
 In general, the build settings will look like so:
+![image](https://user-images.githubusercontent.com/71273009/198213418-ea141090-8f7b-4092-8260-01af128b8ef9.png)
 
 ### Environment variables
 
