@@ -1,5 +1,10 @@
 This is a [Tina CMS](https://tina.io/) project.
 
+## Setup
+
+- Fork this repo
+- Clone the fork to your local machine.
+
 ## Local Development
 
 Install the project's dependencies:
@@ -21,9 +26,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Replace the `.env.example`, with `.env`
 
 ```
-NEXT_PUBLIC_TINA_CLIENT_ID=<get this from the project you create at app.tina.io>
+TINA_CLIENT_ID=<get this from the project you create at app.tina.io>
 TINA_TOKEN=<get this from the project you create at app.tina.io>
-NEXT_PUBLIC_TINA_BRANCH=<Specify the branch with Tina configured>
+TINA_BRANCH=<Specify the branch with Tina configured>
 ```
 
 Build the project:
@@ -31,6 +36,17 @@ Build the project:
 ```bash
 yarn build
 ```
+## Deploying the Site
+
+This project can easily be deployed using services like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/). 
+
+### Build settings
+
+In general, the build settings will look like so:
+
+### Environment variables
+
+When setting up the Netlify/Vercel project, apply the `TINA_CLIENT_ID` & `TINA_TOKEN` environment variables from your [app.tina.io](https://app.tina.io) project. 
 
 ## Learn More
 
