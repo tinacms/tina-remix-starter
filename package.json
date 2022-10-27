@@ -5,7 +5,8 @@
   "sideEffects": false,
   "scripts": {
     "build": "tinacms build && remix build",
-    "dev": "tinacms dev -c \"remix dev\""
+    "dev": "tinacms dev -c \"remix dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@remix-run/node": "^1.7.3",

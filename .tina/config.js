@@ -2,10 +2,10 @@ import { defineStaticConfig } from "tinacms";
 
 const schema = {
   config: {
-    clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+    clientId: process.env.TINA_CLIENT_ID,
     branch:
-      process.env.NEXT_PUBLIC_TINA_BRANCH ||
-      process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF ||
+      process.env.TINA_BRANCH ||
+      process.env.VERCEL_GIT_COMMIT_REF ||
       process.env.HEAD,
     token: process.env.TINA_TOKEN,
     media: {
