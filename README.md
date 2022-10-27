@@ -57,5 +57,3 @@ To learn more about Tina, take a look at the following resources:
 - [Getting starter guide](https://tina.io/docs/introduction/using-starter/)
 
 You can check out [Tina Github repository](https://github.com/tinacms/tinacms) - your feedback and contributions are welcome!
-
-## [Deploy on Vercel](https://tina.io/docs/tina-cloud/connecting-site/)
