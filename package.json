@@ -21,7 +21,7 @@
     "@remix-run/dev": "^1.7.3",
     "@remix-run/eslint-config": "^1.7.3",
     "@remix-run/serve": "^1.7.3",
-    "@tinacms/cli": "^1.0.0",
+    "@tinacms/cli": "^1.0.9",
     "eslint": "^8.23.1"
   },
   "engines": {
