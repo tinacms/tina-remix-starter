@@ -3,7 +3,7 @@ import { useTina } from "tinacms/dist/react";
 
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { Layout } from "~/components/Layout";
-import { client } from ".tina/__generated__/client";
+import { client } from "tina/__generated__/client";
 
 
 export default function Home() {

@@ -1,4 +1,5 @@
 node_modules
+tina/__generated__
 
 .cache
 .env

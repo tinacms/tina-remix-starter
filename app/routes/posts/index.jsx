@@ -2,7 +2,7 @@ import { Link, useLoaderData } from "@remix-run/react";
 import { useTina } from "tinacms/dist/react";
 
 import { Layout } from "~/components/Layout";
-import { client } from ".tina/__generated__/client";
+import { client } from "tina/__generated__/client";
 
 export default function PostList() {
   // data passes though in production mode and data is updated to the sidebar data in edit-mode
