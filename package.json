@@ -5,6 +5,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "tinacms build && remix build",
+    "build-local": "tinacms build --local && remix build",
     "dev": "tinacms dev -c \"remix dev\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,7 +26,7 @@
     "eslint": "^8.23.1"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "resolutions": {
     "react-router": "6.3.0",
