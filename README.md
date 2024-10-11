@@ -1,59 +1,40 @@
-This is a [Tina CMS](https://tina.io/) project.
+# Welcome to Remix!
 
-## Setup
+- 📖 [Remix docs](https://remix.run/docs)
 
-- Fork this repo
-- Clone the fork to your local machine.
+## Development
 
-## Local Development
+Run the dev server:
 
-Install the project's dependencies:
-
-```
-yarn install
+```shellscript
+npm run dev
 ```
 
-Run the project locally:
+## Deployment
 
-```
-yarn dev
-```
+First, build your app for production:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-### Building the Starter Locally (Using the hosted content API)
-
-Replace the `.env.example`, with `.env`
-
-```
-TINA_CLIENT_ID=<get this from the project you create at app.tina.io>
-TINA_TOKEN=<get this from the project you create at app.tina.io>
-TINA_BRANCH=<Specify the branch with Tina configured>
+```sh
+npm run build
 ```
 
-Build the project:
+Then run the app in production mode:
 
-```bash
-yarn build
+```sh
+npm start
 ```
-## Deploying the Site
 
-This project can easily be deployed using services like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/). 
+Now you'll need to pick a host to deploy it to.
 
-### Build settings
+### DIY
 
-In general, the build settings will look like so:
-![image](https://user-images.githubusercontent.com/71273009/198213418-ea141090-8f7b-4092-8260-01af128b8ef9.png)
+If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
 
-### Environment variables
+Make sure to deploy the output of `npm run build`
 
-When setting up the Netlify/Vercel project, apply the `TINA_CLIENT_ID` & `TINA_TOKEN` environment variables from your [app.tina.io](https://app.tina.io) project. 
+- `build/server`
+- `build/client`
 
-## Learn More
+## Styling
 
-To learn more about Tina, take a look at the following resources:
-
-- [Tina Docs](https://tina.io/docs)
-- [Getting starter guide](https://tina.io/docs/introduction/using-starter/)
-
-You can check out [Tina Github repository](https://github.com/tinacms/tinacms) - your feedback and contributions are welcome!
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.

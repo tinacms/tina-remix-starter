@@ -1,6 +1,6 @@
 import { defineConfig } from "tinacms";
-import Page from "./collections/page";
-import Post from "./collections/post";
+import {Page} from "./collections/page";
+
 
 export const config = defineConfig({
   clientId: process.env.TINA_CLIENT_ID,
@@ -18,7 +18,7 @@ export const config = defineConfig({
     // this is the config for the tina cloud media store
     tina: {
       publicFolder: "public",
-      mediaRoot: "uploads",
+      mediaRoot: "",
     },
   },
   build: {
@@ -26,7 +26,7 @@ export const config = defineConfig({
     outputFolder: "admin", // within the public folder
   },
   schema: {
-    collections: [Page, Post],
+    collections: [Page],
   },
 });
 
