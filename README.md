@@ -1,4 +1,6 @@
-This is a [Tina CMS](https://tina.io/) project.
+This is a [Tina CMS](https://tina.io/) starter project.
+
+![remix-tinacms.gif](/public/remix-tinacms.gif)
 
 ## Setup
 
@@ -10,16 +12,16 @@ This is a [Tina CMS](https://tina.io/) project.
 Install the project's dependencies:
 
 ```
-yarn install
+pnpm install
 ```
 
 Run the project locally:
 
 ```
-yarn dev
+pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
 
 ### Building the Starter Locally (Using the hosted content API)
 
@@ -34,8 +36,15 @@ TINA_BRANCH=<Specify the branch with Tina configured>
 Build the project:
 
 ```bash
-yarn build
+pnpm build
 ```
+
+Then run the app in production mode:
+
+```sh
+pnpm start
+```
+
 ## Deploying the Site
 
 This project can easily be deployed using services like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/). 
@@ -53,7 +62,22 @@ When setting up the Netlify/Vercel project, apply the `TINA_CLIENT_ID` & `TINA_T
 
 To learn more about Tina, take a look at the following resources:
 
+- 📖 [Remix docs](https://remix.run/docs)
 - [Tina Docs](https://tina.io/docs)
 - [Getting starter guide](https://tina.io/docs/introduction/using-starter/)
 
 You can check out [Tina Github repository](https://github.com/tinacms/tinacms) - your feedback and contributions are welcome!
+
+
+### DIY
+
+If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+
+Make sure to deploy the output of `pnpm run build`
+
+- `build/server`
+- `build/client`
+
+## Styling
+
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
