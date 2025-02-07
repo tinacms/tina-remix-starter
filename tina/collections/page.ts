@@ -41,7 +41,7 @@ export const Page: Collection = {
             component: "select",
           },
           name: "icon",
-          options: ["lightning", "click", "docs", "discord"],
+          options: ["lightning", "click", "docs", "discord", "deployment"],
         },
         { type: "string", name: "url" },
       ],
