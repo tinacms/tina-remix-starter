@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@remix-run/node':
-        specifier: ^2.15.2
-        version: 2.15.2(typescript@5.7.3)
+        specifier: ^2.15.3
+        version: 2.15.3(typescript@5.7.3)
       '@remix-run/react':
-        specifier: ^2.15.2
-        version: 2.15.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+        specifier: ^2.15.3
+        version: 2.15.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@remix-run/serve':
-        specifier: ^2.15.2
-        version: 2.15.2(typescript@5.7.3)
+        specifier: ^2.15.3
+        version: 2.15.3(typescript@5.7.3)
       isbot:
         specifier: ^4.4.0
         version: 4.4.0
@@ -27,15 +27,15 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       tinacms:
-        specifier: ^2.6.1
-        version: 2.6.1(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
+        specifier: ^2.6.4
+        version: 2.6.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
     devDependencies:
       '@remix-run/dev':
-        specifier: ^2.15.2
-        version: 2.15.2(@remix-run/react@2.15.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3))(@remix-run/serve@2.15.2(typescript@5.7.3))(@types/node@22.7.5)(typescript@5.7.3)(vite@5.4.11(@types/node@22.7.5))
+        specifier: ^2.15.3
+        version: 2.15.3(@remix-run/react@2.15.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3))(@remix-run/serve@2.15.3(typescript@5.7.3))(@types/node@22.7.5)(typescript@5.7.3)(vite@5.4.14(@types/node@22.7.5))
       '@tinacms/cli':
-        specifier: ^1.8.1
-        version: 1.8.1(@codemirror/language@6.0.0)(@types/node@22.7.5)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.24.0)(scheduler@0.23.2)(sucrase@3.35.0)
+        specifier: ^1.8.4
+        version: 1.8.4(@codemirror/language@6.0.0)(@types/node@22.7.5)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.24.0)(scheduler@0.23.2)(sucrase@3.35.0)
       '@types/react':
         specifier: ^18.3.18
         version: 18.3.18
@@ -50,7 +50,7 @@ importers:
         version: 6.21.0(eslint@8.57.1)(typescript@5.7.3)
       autoprefixer:
         specifier: ^10.4.20
-        version: 10.4.20(postcss@8.4.49)
+        version: 10.4.20(postcss@8.5.2)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -70,8 +70,8 @@ importers:
         specifier: ^4.6.2
         version: 4.6.2(eslint@8.57.1)
       postcss:
-        specifier: ^8.4.49
-        version: 8.4.49
+        specifier: ^8.5.2
+        version: 8.5.2
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17
@@ -79,11 +79,11 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3
       vite:
-        specifier: ^5.4.11
-        version: 5.4.11(@types/node@22.7.5)
+        specifier: ^5.4.14
+        version: 5.4.14(@types/node@22.7.5)
       vite-tsconfig-paths:
         specifier: ^4.3.2
-        version: 4.3.2(typescript@5.7.3)(vite@5.4.11(@types/node@22.7.5))
+        version: 4.3.2(typescript@5.7.3)(vite@5.4.14(@types/node@22.7.5))
 
 packages:
 
@@ -1773,13 +1773,13 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
 
-  '@remix-run/dev@2.15.2':
-    resolution: {integrity: sha512-o8lix8t4GBhtXjo/G1IzwtHVW5GRMs7amtFtBHiR1bhSyK7VyX5qGtTDmJyny5QDv83pxaLOCiE0dUng2BCoyQ==}
+  '@remix-run/dev@2.15.3':
+    resolution: {integrity: sha512-agndQJHs7qISPXXH/Zet0VHWvcwtQGoEOXxltjerNQ2zWcAJQBm9i06tS6n6v/ZP0sHIVdo/IsvgAA4wetqmNw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
-      '@remix-run/react': ^2.15.2
-      '@remix-run/serve': ^2.15.2
+      '@remix-run/react': ^2.15.3
+      '@remix-run/serve': ^2.15.3
       typescript: ^5.1.0
       vite: ^5.1.0
       wrangler: ^3.28.2
@@ -1793,8 +1793,8 @@ packages:
       wrangler:
         optional: true
 
-  '@remix-run/express@2.15.2':
-    resolution: {integrity: sha512-54FKQ6/Zj2DCxc4/9tWKUJLPkFakCUf1m7j7a5zp4JGDr436lkZEpS9btfoBZAVq14SIMp5Uc4yt5rUJ1PMORw==}
+  '@remix-run/express@2.15.3':
+    resolution: {integrity: sha512-6a4S5KrRNiLDiaOneuoMpMMFo9ztB4gZ1AOJSX6BmqpXmcq/P+WhRXOqXrUYeL4fMstJhTVM8CzlInlfpem8Vw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       express: ^4.20.0
@@ -1803,8 +1803,8 @@ packages:
       typescript:
         optional: true
 
-  '@remix-run/node@2.15.2':
-    resolution: {integrity: sha512-NS/h5uxje7DYCNgcKqKAiUhf0r2HVnoYUBWLyIIMmCUP1ddWurBP6xTPcWzGhEvV/EvguniYi1wJZ5+X8sonWw==}
+  '@remix-run/node@2.15.3':
+    resolution: {integrity: sha512-TYfS6BPhbABBpSRZ6WBA4qIWSwWvJhRVQGXCHUtgOwkuW863rcFmjh9g2Xj/IHyTmbOYPdcjHsIgZ9el4CHOKQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       typescript: ^5.1.0
@@ -1812,8 +1812,8 @@ packages:
       typescript:
         optional: true
 
-  '@remix-run/react@2.15.2':
-    resolution: {integrity: sha512-NAAMsSgoC/sdOgovUewwRCE/RUm3F+MBxxZKfwu3POCNeHaplY5qGkH/y8PUXvdN1EBG7Z0Ko43dyzCfcEy5PA==}
+  '@remix-run/react@2.15.3':
+    resolution: {integrity: sha512-AynCltIk8KLlxV9a+4dORtEMNtF5wJAzBNBZLJMdw3FCJNQZRYQSen8rDnIovOOiz9UNZ2SmBTFERiFMKS16jw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^18.0.0
@@ -1823,17 +1823,17 @@ packages:
       typescript:
         optional: true
 
-  '@remix-run/router@1.21.0':
-    resolution: {integrity: sha512-xfSkCAchbdG5PnbrKqFWwia4Bi61nH+wm8wLEqfHDyp7Y3dZzgqS2itV8i4gAq9pC2HsTpwyBC6Ds8VHZ96JlA==}
+  '@remix-run/router@1.22.0':
+    resolution: {integrity: sha512-MBOl8MeOzpK0HQQQshKB7pABXbmyHizdTpqnrIseTbsv0nAepwC2ENZa1aaBExNQcpLoXmWthhak8SABLzvGPw==}
     engines: {node: '>=14.0.0'}
 
-  '@remix-run/serve@2.15.2':
-    resolution: {integrity: sha512-m/nZtAUzzGcixNgNc3RNjA1ocFlWAuZFALpZ5fJdPXmITwqRwfjo/1gI+jx7AL7haoo+4j/sAljuAQw2CiswXA==}
+  '@remix-run/serve@2.15.3':
+    resolution: {integrity: sha512-7P0FWeNu1NEaSJpL2Xn8fZbr4zxkrOR6Qg03p7iYbipcQ1L0zr9Nxe5KKG4m9n8EyRWWxDV2L+wXHI7Ul9HiMw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  '@remix-run/server-runtime@2.15.2':
-    resolution: {integrity: sha512-OqiPcvEnnU88B8b1LIWHHkQ3Tz2GDAmQ1RihFNQsbrFKpDsQLkw0lJlnfgKA/uHd0CEEacpfV7C9qqJT3V6Z2g==}
+  '@remix-run/server-runtime@2.15.3':
+    resolution: {integrity: sha512-taHBe1DEqxZNjjj6OfkSYbup+sZPjbTgUhykaI+nHqrC2NDQuTiisBXhLwtx60GctONR/x0lWhF7R9ZGC5WsHw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       typescript: ^5.1.0
@@ -2049,15 +2049,15 @@ packages:
   '@tanstack/virtual-core@3.10.8':
     resolution: {integrity: sha512-PBu00mtt95jbKFi6Llk9aik8bnR3tR/oQP1o3TSi+iG//+Q2RTIzCEgKkHG8BB86kxMNW6O8wku+Lmi+QFR6jA==}
 
-  '@tinacms/app@2.1.16':
-    resolution: {integrity: sha512-/DDprXwXhuCeVnqktcHsWrot6jfsRRmF34f4WxcAZRTcMswEwFn7pYoK8Ug2l8ffMt3kzrRVu6D1xFNZNfS1Kw==}
+  '@tinacms/app@2.1.19':
+    resolution: {integrity: sha512-apChryDQ77/C3MWwQVpp0DmeMoPxrl5Idn7wjBbUZPikVbv/1pW8dnB4kne94KEnjinEdUwYLF3Mn+OyzLau4Q==}
 
-  '@tinacms/cli@1.8.1':
-    resolution: {integrity: sha512-KwG8B+AZ1moOd+z5AQJon5UKIy3H+Fr8LeOJMwYdf2Xp965UnxbXBDgv6hJ9rM48wIDqBXvMadAnOMUrIeeIWw==}
+  '@tinacms/cli@1.8.4':
+    resolution: {integrity: sha512-/v19hNMNekP6mjrYzPXV/xe5X1j/4Qy0FGUmxykUfo5Z5ivQLBIcQVBQqhcuflqBHY3wLS7N/YL/3M12x/vY3A==}
     hasBin: true
 
-  '@tinacms/graphql@1.5.10':
-    resolution: {integrity: sha512-/8r9lUwKU2RaRE38219CObzPtb2lYJwRLdiauQt4AkGP+W+M9GAy4oDZM2/BuXjKO3oDKaPoj0kv57IwH+aqKA==}
+  '@tinacms/graphql@1.5.12':
+    resolution: {integrity: sha512-hHTwbfwuleor396U6a5XfzeZOWOSb+PFhaCwv/Je5hMHnwZqBh1n/pODzQ/xLC3PW0WiQ5T3MYUqSciWUQOC5Q==}
 
   '@tinacms/mdx@1.5.4':
     resolution: {integrity: sha512-eVBE/XKs8fyr98sGFVilqiXAgIlKSoyF4F4y/WcR7pQyqUh+9i64ncZVAlH/jRJSl1wQKrHCYReafgTk4DBhWg==}
@@ -2073,8 +2073,8 @@ packages:
       react: '>=16.14.0'
       yup: ^0.32.0
 
-  '@tinacms/search@1.0.37':
-    resolution: {integrity: sha512-DX7A/CHHpUlhjaJ+m2AJ5osE2JEnEioYXrBoC5YUAX7zdxIa7VoA/BbCWMehrwrYhBbcr+nXll08YP+N1b0naA==}
+  '@tinacms/search@1.0.39':
+    resolution: {integrity: sha512-jxSYLEa+vMuP8m9zU2zazzZ765R4epPlTLa16+tI2vGxDvHlJ4wLG+wmwfUICbdKps9wIbYTaybzQy6NC8jWeA==}
 
   '@types/acorn@4.0.6':
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
@@ -4986,6 +4986,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -5496,6 +5497,11 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  nanoid@3.3.8:
+    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
   napi-build-utils@1.0.2:
     resolution: {integrity: sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==}
 
@@ -5907,8 +5913,8 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.4.49:
-    resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
+  postcss@8.5.2:
+    resolution: {integrity: sha512-MjOadfU3Ys9KYoX0AdkBlFEF1Vx37uCCeN4ZHnmwm9FfpbsGWMZeBLMmmpY+6Ocqod7mkdZ0DT31OlbsFrLlkA==}
     engines: {node: ^10 || ^12 || >=14}
 
   prebuild-install@7.1.2:
@@ -6117,8 +6123,8 @@ packages:
       '@types/react':
         optional: true
 
-  react-router-dom@6.28.1:
-    resolution: {integrity: sha512-YraE27C/RdjcZwl5UCqF/ffXnZDxpJdk9Q6jw38SZHjXs7NNdpViq2l2c7fO7+4uWaEfcwfGCv3RSg4e1By/fQ==}
+  react-router-dom@6.29.0:
+    resolution: {integrity: sha512-pkEbJPATRJ2iotK+wUwHfy0xs2T59YPEN8BQxVCPeBZvK7kfPESRc/nyxzdcxR17hXgUPYx2whMwl+eo9cUdnQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
@@ -6130,8 +6136,8 @@ packages:
       react: '>=16.8'
       react-dom: '>=16.8'
 
-  react-router@6.28.1:
-    resolution: {integrity: sha512-2omQTA3rkMljmrvvo6WtewGdVh45SpL9hGiCI9uUrwGGfNFDIvGK4gYJsKlJoNVi6AQZcopSCballL+QGOm7fA==}
+  react-router@6.29.0:
+    resolution: {integrity: sha512-DXZJoE0q+KyeVw75Ck6GkPxFak63C4fGqZGNijnWgzB/HzSP1ZfTlBj5COaGWwhrMQ/R8bXiq5Ooy4KG+ReyjQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
@@ -6780,8 +6786,8 @@ packages:
   through2@2.0.5:
     resolution: {integrity: sha512-/mrRod8xqpA+IHSLyGCQ2s8SPHiCDEeQJSep1jqLYeEUClOFG2Qsh+4FU6G9VeqpZnGW/Su8LQGc4YKni5rYSQ==}
 
-  tinacms@2.6.1:
-    resolution: {integrity: sha512-wxxLOIhmxG15zNTR/fJO4NMuskcQE32yUXk8ghk7ORxKPBDFICIcUqmTVpPussCC7DRjWs17B+ywSsdy/+s93g==}
+  tinacms@2.6.4:
+    resolution: {integrity: sha512-lQMZKbs/CS9YQmS5ZUP3UKKDY+31y7SLoiUZXfTCnvoJjXzbD6nQScZMy7m+qS/fO2uwDPlcdOEJnmoP8aXJAA==}
     peerDependencies:
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
@@ -7240,8 +7246,8 @@ packages:
       terser:
         optional: true
 
-  vite@5.4.11:
-    resolution: {integrity: sha512-c7jFQRklXua0mTzneGW9QVyxFjUgwcihC4bXEtujIo2ouWCe1Ajt/amn2PCxYnhYfd5k09JX3SB7OYWFKYqj8Q==}
+  vite@5.4.14:
+    resolution: {integrity: sha512-EK5cY7Q1D8JNhSaPKVK4pwBFvaTmZxEnoKXLG/U9gmdDcihQGNzFlgIvaxezFR4glP1LsuiedwMBqCXH3wZccA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -9092,7 +9098,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  '@remix-run/dev@2.15.2(@remix-run/react@2.15.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3))(@remix-run/serve@2.15.2(typescript@5.7.3))(@types/node@22.7.5)(typescript@5.7.3)(vite@5.4.11(@types/node@22.7.5))':
+  '@remix-run/dev@2.15.3(@remix-run/react@2.15.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3))(@remix-run/serve@2.15.3(typescript@5.7.3))(@types/node@22.7.5)(typescript@5.7.3)(vite@5.4.14(@types/node@22.7.5))':
     dependencies:
       '@babel/core': 7.25.7
       '@babel/generator': 7.25.7
@@ -9104,10 +9110,10 @@ snapshots:
       '@babel/types': 7.25.7
       '@mdx-js/mdx': 2.3.0
       '@npmcli/package-json': 4.0.1
-      '@remix-run/node': 2.15.2(typescript@5.7.3)
-      '@remix-run/react': 2.15.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@remix-run/router': 1.21.0
-      '@remix-run/server-runtime': 2.15.2(typescript@5.7.3)
+      '@remix-run/node': 2.15.3(typescript@5.7.3)
+      '@remix-run/react': 2.15.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@remix-run/router': 1.22.0
+      '@remix-run/server-runtime': 2.15.3(typescript@5.7.3)
       '@types/mdx': 2.0.13
       '@vanilla-extract/integration': 6.5.0(@types/node@22.7.5)
       arg: 5.0.2
@@ -9134,10 +9140,10 @@ snapshots:
       picocolors: 1.1.1
       picomatch: 2.3.1
       pidtree: 0.6.0
-      postcss: 8.4.49
-      postcss-discard-duplicates: 5.1.0(postcss@8.4.49)
-      postcss-load-config: 4.0.2(postcss@8.4.49)
-      postcss-modules: 6.0.0(postcss@8.4.49)
+      postcss: 8.5.2
+      postcss-discard-duplicates: 5.1.0(postcss@8.5.2)
+      postcss-load-config: 4.0.2(postcss@8.5.2)
+      postcss-modules: 6.0.0(postcss@8.5.2)
       prettier: 2.8.8
       pretty-ms: 7.0.1
       react-refresh: 0.14.2
@@ -9151,9 +9157,9 @@ snapshots:
       vite-node: 1.6.0(@types/node@22.7.5)
       ws: 7.5.10
     optionalDependencies:
-      '@remix-run/serve': 2.15.2(typescript@5.7.3)
+      '@remix-run/serve': 2.15.3(typescript@5.7.3)
       typescript: 5.7.3
-      vite: 5.4.11(@types/node@22.7.5)
+      vite: 5.4.14(@types/node@22.7.5)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -9170,16 +9176,16 @@ snapshots:
       - ts-node
       - utf-8-validate
 
-  '@remix-run/express@2.15.2(express@4.21.1)(typescript@5.7.3)':
+  '@remix-run/express@2.15.3(express@4.21.1)(typescript@5.7.3)':
     dependencies:
-      '@remix-run/node': 2.15.2(typescript@5.7.3)
+      '@remix-run/node': 2.15.3(typescript@5.7.3)
       express: 4.21.1
     optionalDependencies:
       typescript: 5.7.3
 
-  '@remix-run/node@2.15.2(typescript@5.7.3)':
+  '@remix-run/node@2.15.3(typescript@5.7.3)':
     dependencies:
-      '@remix-run/server-runtime': 2.15.2(typescript@5.7.3)
+      '@remix-run/server-runtime': 2.15.3(typescript@5.7.3)
       '@remix-run/web-fetch': 4.4.2
       '@web3-storage/multipart-parser': 1.0.0
       cookie-signature: 1.2.1
@@ -9189,24 +9195,24 @@ snapshots:
     optionalDependencies:
       typescript: 5.7.3
 
-  '@remix-run/react@2.15.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@remix-run/react@2.15.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@remix-run/router': 1.21.0
-      '@remix-run/server-runtime': 2.15.2(typescript@5.7.3)
+      '@remix-run/router': 1.22.0
+      '@remix-run/server-runtime': 2.15.3(typescript@5.7.3)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      react-router: 6.28.1(react@18.3.1)
-      react-router-dom: 6.28.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-router: 6.29.0(react@18.3.1)
+      react-router-dom: 6.29.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       turbo-stream: 2.4.0
     optionalDependencies:
       typescript: 5.7.3
 
-  '@remix-run/router@1.21.0': {}
+  '@remix-run/router@1.22.0': {}
 
-  '@remix-run/serve@2.15.2(typescript@5.7.3)':
+  '@remix-run/serve@2.15.3(typescript@5.7.3)':
     dependencies:
-      '@remix-run/express': 2.15.2(express@4.21.1)(typescript@5.7.3)
-      '@remix-run/node': 2.15.2(typescript@5.7.3)
+      '@remix-run/express': 2.15.3(express@4.21.1)(typescript@5.7.3)
+      '@remix-run/node': 2.15.3(typescript@5.7.3)
       chokidar: 3.6.0
       compression: 1.7.4
       express: 4.21.1
@@ -9217,9 +9223,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@remix-run/server-runtime@2.15.2(typescript@5.7.3)':
+  '@remix-run/server-runtime@2.15.3(typescript@5.7.3)':
     dependencies:
-      '@remix-run/router': 1.21.0
+      '@remix-run/router': 1.22.0
       '@types/cookie': 0.6.0
       '@web3-storage/multipart-parser': 1.0.0
       cookie: 0.6.0
@@ -9425,7 +9431,7 @@ snapshots:
 
   '@tanstack/virtual-core@3.10.8': {}
 
-  '@tinacms/app@2.1.16(@codemirror/language@6.0.0)(@types/node@22.7.5)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(scheduler@0.23.2)(sucrase@3.35.0)(yup@1.4.0)':
+  '@tinacms/app@2.1.19(@codemirror/language@6.0.0)(@types/node@22.7.5)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(scheduler@0.23.2)(sucrase@3.35.0)(yup@1.4.0)':
     dependencies:
       '@graphiql/toolkit': 0.8.4(@types/node@22.7.5)(graphql@15.8.0)
       '@headlessui/react': 2.1.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -9439,7 +9445,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-router-dom: 6.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      tinacms: 2.6.1(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
+      tinacms: 2.6.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
       typescript: 5.7.3
       zod: 3.23.8
     transitivePeerDependencies:
@@ -9456,7 +9462,7 @@ snapshots:
       - supports-color
       - yup
 
-  '@tinacms/cli@1.8.1(@codemirror/language@6.0.0)(@types/node@22.7.5)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.24.0)(scheduler@0.23.2)(sucrase@3.35.0)':
+  '@tinacms/cli@1.8.4(@codemirror/language@6.0.0)(@types/node@22.7.5)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.24.0)(scheduler@0.23.2)(sucrase@3.35.0)':
     dependencies:
       '@graphql-codegen/core': 2.6.8(graphql@15.8.0)
       '@graphql-codegen/plugin-helpers': 5.1.0(graphql@15.8.0)
@@ -9471,11 +9477,11 @@ snapshots:
       '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.4.17)
       '@tailwindcss/container-queries': 0.1.1(tailwindcss@3.4.17)
       '@tailwindcss/typography': 0.5.15(tailwindcss@3.4.17)
-      '@tinacms/app': 2.1.16(@codemirror/language@6.0.0)(@types/node@22.7.5)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(scheduler@0.23.2)(sucrase@3.35.0)(yup@1.4.0)
-      '@tinacms/graphql': 1.5.10(react@18.3.1)(typescript@5.7.3)
+      '@tinacms/app': 2.1.19(@codemirror/language@6.0.0)(@types/node@22.7.5)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(scheduler@0.23.2)(sucrase@3.35.0)(yup@1.4.0)
+      '@tinacms/graphql': 1.5.12(react@18.3.1)(typescript@5.7.3)
       '@tinacms/metrics': 1.0.8(fs-extra@11.2.0)
       '@tinacms/schema-tools': 1.7.0(react@18.3.1)(yup@1.4.0)
-      '@tinacms/search': 1.0.37(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.4.0)
+      '@tinacms/search': 1.0.39(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.4.0)
       '@vitejs/plugin-react': 3.1.0(vite@4.5.5(@types/node@22.7.5))
       altair-express-middleware: 7.3.6
       auto-bind: 4.0.0
@@ -9502,7 +9508,7 @@ snapshots:
       prompts: 2.4.2
       readable-stream: 4.5.2
       tailwindcss: 3.4.17
-      tinacms: 2.6.1(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
+      tinacms: 2.6.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
       typanion: 3.13.0
       typescript: 5.7.3
       vite: 4.5.5(@types/node@22.7.5)
@@ -9532,7 +9538,7 @@ snapshots:
       - terser
       - ts-node
 
-  '@tinacms/graphql@1.5.10(react@18.3.1)(typescript@5.7.3)':
+  '@tinacms/graphql@1.5.12(react@18.3.1)(typescript@5.7.3)':
     dependencies:
       '@iarna/toml': 2.2.5
       '@tinacms/mdx': 1.5.4(react@18.3.1)(typescript@5.7.3)(yup@0.32.11)
@@ -9661,9 +9667,9 @@ snapshots:
       yup: 1.4.0
       zod: 3.23.8
 
-  '@tinacms/search@1.0.37(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.4.0)':
+  '@tinacms/search@1.0.39(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.4.0)':
     dependencies:
-      '@tinacms/graphql': 1.5.10(react@18.3.1)(typescript@5.7.3)
+      '@tinacms/graphql': 1.5.12(react@18.3.1)(typescript@5.7.3)
       '@tinacms/schema-tools': 1.7.0(react@18.3.1)(yup@1.4.0)
       memory-level: 1.0.0
       search-index: 4.0.0(abstract-level@1.0.4)
@@ -10543,7 +10549,7 @@ snapshots:
       lodash: 4.17.21
       mlly: 1.7.2
       outdent: 0.8.0
-      vite: 5.4.11(@types/node@22.7.5)
+      vite: 5.4.14(@types/node@22.7.5)
       vite-node: 1.6.0(@types/node@22.7.5)
     transitivePeerDependencies:
       - '@types/node'
@@ -10769,14 +10775,14 @@ snapshots:
 
   auto-bind@4.0.0: {}
 
-  autoprefixer@10.4.20(postcss@8.4.49):
+  autoprefixer@10.4.20(postcss@8.5.2):
     dependencies:
       browserslist: 4.24.0
       caniuse-lite: 1.0.30001667
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.0
-      postcss: 8.4.49
+      postcss: 8.5.2
       postcss-value-parser: 4.2.0
 
   available-typed-arrays@1.0.7:
@@ -11930,7 +11936,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -11952,7 +11958,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -12663,9 +12669,9 @@ snapshots:
     dependencies:
       safer-buffer: 2.1.2
 
-  icss-utils@5.1.0(postcss@8.4.49):
+  icss-utils@5.1.0(postcss@8.5.2):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.2
 
   ieee754@1.2.1: {}
 
@@ -12742,7 +12748,7 @@ snapshots:
 
   is-arguments@1.1.1:
     dependencies:
-      call-bind: 1.0.7
+      call-bind: 1.0.8
       has-tostringtag: 1.0.2
 
   is-array-buffer@3.0.4:
@@ -14030,6 +14036,8 @@ snapshots:
 
   nanoid@3.3.7: {}
 
+  nanoid@3.3.8: {}
+
   napi-build-utils@1.0.2: {}
 
   natural-compare@1.4.0: {}
@@ -14374,65 +14382,65 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  postcss-discard-duplicates@5.1.0(postcss@8.4.49):
+  postcss-discard-duplicates@5.1.0(postcss@8.5.2):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.2
 
-  postcss-import@15.1.0(postcss@8.4.49):
+  postcss-import@15.1.0(postcss@8.5.2):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.2
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.8
 
-  postcss-js@4.0.1(postcss@8.4.49):
+  postcss-js@4.0.1(postcss@8.5.2):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.4.49
+      postcss: 8.5.2
 
-  postcss-load-config@4.0.2(postcss@8.4.49):
+  postcss-load-config@4.0.2(postcss@8.5.2):
     dependencies:
       lilconfig: 3.1.2
       yaml: 2.5.1
     optionalDependencies:
-      postcss: 8.4.49
+      postcss: 8.5.2
 
-  postcss-modules-extract-imports@3.1.0(postcss@8.4.49):
+  postcss-modules-extract-imports@3.1.0(postcss@8.5.2):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.2
 
-  postcss-modules-local-by-default@4.0.5(postcss@8.4.49):
+  postcss-modules-local-by-default@4.0.5(postcss@8.5.2):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.49)
-      postcss: 8.4.49
+      icss-utils: 5.1.0(postcss@8.5.2)
+      postcss: 8.5.2
       postcss-selector-parser: 6.1.2
       postcss-value-parser: 4.2.0
 
-  postcss-modules-scope@3.2.0(postcss@8.4.49):
+  postcss-modules-scope@3.2.0(postcss@8.5.2):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.2
       postcss-selector-parser: 6.1.2
 
-  postcss-modules-values@4.0.0(postcss@8.4.49):
+  postcss-modules-values@4.0.0(postcss@8.5.2):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.49)
-      postcss: 8.4.49
+      icss-utils: 5.1.0(postcss@8.5.2)
+      postcss: 8.5.2
 
-  postcss-modules@6.0.0(postcss@8.4.49):
+  postcss-modules@6.0.0(postcss@8.5.2):
     dependencies:
       generic-names: 4.0.0
-      icss-utils: 5.1.0(postcss@8.4.49)
+      icss-utils: 5.1.0(postcss@8.5.2)
       lodash.camelcase: 4.3.0
-      postcss: 8.4.49
-      postcss-modules-extract-imports: 3.1.0(postcss@8.4.49)
-      postcss-modules-local-by-default: 4.0.5(postcss@8.4.49)
-      postcss-modules-scope: 3.2.0(postcss@8.4.49)
-      postcss-modules-values: 4.0.0(postcss@8.4.49)
+      postcss: 8.5.2
+      postcss-modules-extract-imports: 3.1.0(postcss@8.5.2)
+      postcss-modules-local-by-default: 4.0.5(postcss@8.5.2)
+      postcss-modules-scope: 3.2.0(postcss@8.5.2)
+      postcss-modules-values: 4.0.0(postcss@8.5.2)
       string-hash: 1.1.3
 
-  postcss-nested@6.2.0(postcss@8.4.49):
+  postcss-nested@6.2.0(postcss@8.5.2):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.2
       postcss-selector-parser: 6.1.2
 
   postcss-selector-parser@6.0.10:
@@ -14447,9 +14455,9 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.4.49:
+  postcss@8.5.2:
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.8
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -14557,7 +14565,7 @@ snapshots:
 
   qs@6.13.0:
     dependencies:
-      side-channel: 1.0.6
+      side-channel: 1.1.0
 
   queue-microtask@1.2.3: {}
 
@@ -14675,12 +14683,12 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.18
 
-  react-router-dom@6.28.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-router-dom@6.29.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@remix-run/router': 1.21.0
+      '@remix-run/router': 1.22.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      react-router: 6.28.1(react@18.3.1)
+      react-router: 6.29.0(react@18.3.1)
 
   react-router-dom@6.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -14689,9 +14697,9 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-router: 6.3.0(react@18.3.1)
 
-  react-router@6.28.1(react@18.3.1):
+  react-router@6.29.0(react@18.3.1):
     dependencies:
-      '@remix-run/router': 1.21.0
+      '@remix-run/router': 1.22.0
       react: 18.3.1
 
   react-router@6.3.0(react@18.3.1):
@@ -15498,11 +15506,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.4.49
-      postcss-import: 15.1.0(postcss@8.4.49)
-      postcss-js: 4.0.1(postcss@8.4.49)
-      postcss-load-config: 4.0.2(postcss@8.4.49)
-      postcss-nested: 6.2.0(postcss@8.4.49)
+      postcss: 8.5.2
+      postcss-import: 15.1.0(postcss@8.5.2)
+      postcss-js: 4.0.1(postcss@8.5.2)
+      postcss-load-config: 4.0.2(postcss@8.5.2)
+      postcss-nested: 6.2.0(postcss@8.5.2)
       postcss-selector-parser: 6.1.2
       resolve: 1.22.8
       sucrase: 3.35.0
@@ -15554,7 +15562,7 @@ snapshots:
       readable-stream: 2.3.8
       xtend: 4.0.2
 
-  tinacms@2.6.1(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3):
+  tinacms@2.6.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3):
     dependencies:
       '@ariakit/react': 0.4.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@floating-ui/dom': 1.6.12
@@ -15574,7 +15582,7 @@ snapshots:
       '@react-hook/window-size': 3.1.1(react@18.3.1)
       '@tinacms/mdx': 1.5.4(react@18.3.1)(typescript@5.7.3)(yup@1.4.0)
       '@tinacms/schema-tools': 1.7.0(react@18.3.1)(yup@1.4.0)
-      '@tinacms/search': 1.0.37(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.4.0)
+      '@tinacms/search': 1.0.39(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.4.0)
       '@udecode/cn': 33.0.0(@types/react@18.3.18)(class-variance-authority@0.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwind-merge@2.5.5)
       '@udecode/plate': 36.5.9(@types/react@18.3.18)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-autoformat': 36.5.6(@udecode/plate-common@36.5.9(@types/react@18.3.18)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
@@ -15948,7 +15956,7 @@ snapshots:
     dependencies:
       browserslist: 4.24.0
       escalade: 3.2.0
-      picocolors: 1.1.0
+      picocolors: 1.1.1
 
   upper-case-first@2.0.2:
     dependencies:
@@ -16006,8 +16014,8 @@ snapshots:
       inherits: 2.0.4
       is-arguments: 1.1.1
       is-generator-function: 1.0.10
-      is-typed-array: 1.1.13
-      which-typed-array: 1.1.15
+      is-typed-array: 1.1.15
+      which-typed-array: 1.1.18
 
   utils-merge@1.0.1: {}
 
@@ -16086,7 +16094,7 @@ snapshots:
       debug: 4.3.7
       pathe: 1.1.2
       picocolors: 1.1.1
-      vite: 5.4.11(@types/node@22.7.5)
+      vite: 5.4.14(@types/node@22.7.5)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -16098,13 +16106,13 @@ snapshots:
       - supports-color
       - terser
 
-  vite-tsconfig-paths@4.3.2(typescript@5.7.3)(vite@5.4.11(@types/node@22.7.5)):
+  vite-tsconfig-paths@4.3.2(typescript@5.7.3)(vite@5.4.14(@types/node@22.7.5)):
     dependencies:
       debug: 4.3.7
       globrex: 0.1.2
       tsconfck: 3.1.3(typescript@5.7.3)
     optionalDependencies:
-      vite: 5.4.11(@types/node@22.7.5)
+      vite: 5.4.14(@types/node@22.7.5)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -16112,16 +16120,16 @@ snapshots:
   vite@4.5.5(@types/node@22.7.5):
     dependencies:
       esbuild: 0.18.20
-      postcss: 8.4.49
+      postcss: 8.5.2
       rollup: 3.29.5
     optionalDependencies:
       '@types/node': 22.7.5
       fsevents: 2.3.3
 
-  vite@5.4.11(@types/node@22.7.5):
+  vite@5.4.14(@types/node@22.7.5):
     dependencies:
       esbuild: 0.21.5
-      postcss: 8.4.49
+      postcss: 8.5.2
       rollup: 4.24.0
     optionalDependencies:
       '@types/node': 22.7.5
