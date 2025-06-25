@@ -17,11 +17,11 @@
     "isbot": "^4.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tinacms": "^2.7.8"
+    "tinacms": "^2.7.9"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.16.8",
-    "@tinacms/cli": "^1.9.8",
+    "@tinacms/cli": "^1.9.9",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
@@ -29,11 +29,11 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^8.57.1",
     "eslint-import-resolver-typescript": "^3.10.1",
-    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "postcss": "^8.5.4",
+    "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
     "vite": "^5.4.19",
