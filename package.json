@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "tinacms build && remix vite:build",
+    "build-local": "tinacms build --content=local --skip-cloud-checks -c \"remix vite:build\"",
     "dev": "tinacms dev -c \"remix vite:dev\"",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
@@ -17,11 +18,11 @@
     "isbot": "^4.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tinacms": "^3.7.1"
+    "tinacms": "^3.8.1"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.17.1",
-    "@tinacms/cli": "^2.2.1",
+    "@tinacms/cli": "^2.3.1",
     "@types/react": "^18.3.26",
     "@types/react-dom": "^18.3.7",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
