@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "tinacms build && remix vite:build",
+    "build-local": "tinacms build --content=local --skip-cloud-checks -c \"remix vite:build\"",
     "dev": "tinacms dev -c \"remix vite:dev\"",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
