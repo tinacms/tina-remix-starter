@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/check-cloudflare-build-env.mjs && tinacms build -c \"react-router build\"",
-    "build-local": "tinacms build --content=local --skip-cloud-checks -c \"react-router build\"",
+    "build-local": "tinacms build --local --skip-cloud-checks -c \"react-router build\"",
     "dev": "tinacms dev -c \"react-router dev\"",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "react-router-serve ./build/server/index.js",
