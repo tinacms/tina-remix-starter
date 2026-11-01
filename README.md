@@ -1,6 +1,8 @@
-This is a [Tina CMS](https://tina.io/) starter project.
+This is a [Tina CMS](https://tina.io/) starter project built with [React Router v7](https://reactrouter.com/), the successor to Remix.
 
 ![remix-tinacms.gif](/public/remix-tinacms.gif)
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/tinacms/tina-remix-starter)
 
 ## Setup
 
@@ -45,38 +47,56 @@ Then run the app in production mode:
 pnpm start
 ```
 
+### Checking the build without TinaCloud
+
+`pnpm build-local` builds against local content and does not need TinaCloud credentials. The site it builds reads content from the local Tina server, so use it as a compile check or for a local preview (`tinacms dev -c "pnpm start"`), not for deploying.
+
 ## Deploying the Site
 
-This project can easily be deployed using services like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/). 
+The build picks its host from the environment it runs in:
 
-### Build settings
+- `VERCEL` is set: builds for [Vercel](https://vercel.com/).
+- `WORKERS_CI` is set: builds for [Cloudflare Workers](https://developers.cloudflare.com/workers/) (Workers Builds).
+- Otherwise: builds a Node server that you run with `pnpm start`.
 
-In general, the build settings will look like so:
-![image](https://user-images.githubusercontent.com/71273009/198213418-ea141090-8f7b-4092-8260-01af128b8ef9.png)
+To override the detection, set `DEPLOY_ADAPTER` to `vercel`, `cloudflare` or `node`.
 
-### Environment variables
+In every case, add the `TINA_CLIENT_ID` and `TINA_TOKEN` values from your [app.tina.io](https://app.tina.io) project to the host's environment variables. TinaCMS needs them **while building**, not only at runtime.
 
-When setting up the Netlify/Vercel project, apply the `TINA_CLIENT_ID` & `TINA_TOKEN` environment variables from your [app.tina.io](https://app.tina.io) project. 
+### Deploying to Cloudflare
+
+Before your first Cloudflare deploy, add `TINA_CLIENT_ID` and `TINA_TOKEN` as **build variables**: in the Cloudflare dashboard, open your Worker > Settings > Build > Build Variables and Secrets. Worker secrets (under Variables and Secrets) are not visible to the build. Until the build variables exist, the build stops with a message that lists the missing ones. Add them, then retry the build.
+
+`TINA_BRANCH` is optional. When it is empty, TinaCMS uses the branch that Cloudflare builds.
+
+To deploy from your own machine instead:
+
+```bash
+DEPLOY_ADAPTER=cloudflare pnpm build && npx wrangler deploy
+```
+
+### Deploying to Vercel
+
+Import the repo into Vercel and add the environment variables. No other settings are needed.
+
+### Other hosts
+
+Build with `pnpm build` and run `pnpm start` on any host that runs Node 22 or 24. Deploy these build outputs:
+
+- `build/server`
+- `build/client`
+
+Netlify is not supported by this starter.
 
 ## Learn More
 
 To learn more about Tina, take a look at the following resources:
 
-- 📖 [Remix docs](https://remix.run/docs)
+- 📖 [React Router docs](https://reactrouter.com/home)
 - [Tina Docs](https://tina.io/docs)
 - [Getting starter guide](https://tina.io/docs/introduction/using-starter/)
 
 You can check out [Tina Github repository](https://github.com/tinacms/tinacms) - your feedback and contributions are welcome!
-
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `pnpm run build`
-
-- `build/server`
-- `build/client`
 
 ## Styling
 
