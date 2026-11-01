@@ -4,9 +4,12 @@ onlyBuiltDependencies:   # pnpm 10
   - esbuild
   - protobufjs
   - unrs-resolver
+ignoredBuiltDependencies:
+  - workerd
 allowBuilds:             # pnpm 11
   better-sqlite3: true
   core-js: true
   esbuild: true
   protobufjs: true
   unrs-resolver: true
+  workerd: false
