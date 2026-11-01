@@ -7,6 +7,7 @@ export const config = defineConfig({
   branch:
     process.env.TINA_BRANCH || // custom branch env override
     process.env.VERCEL_GIT_COMMIT_REF || // Vercel branch env
+    process.env.WORKERS_CI_BRANCH || // Cloudflare Workers Builds branch env
     process.env.HEAD, // Netlify branch env
   token: process.env.TINA_TOKEN,
   media: {

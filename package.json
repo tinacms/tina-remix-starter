@@ -4,7 +4,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "tinacms build -c \"react-router build\"",
+    "build": "node scripts/check-cloudflare-build-env.mjs && tinacms build -c \"react-router build\"",
     "build-local": "tinacms build --content=local --skip-cloud-checks -c \"react-router build\"",
     "dev": "tinacms dev -c \"react-router dev\"",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
@@ -48,5 +48,18 @@
   "engines": {
     "node": "22.x || 24.x"
   },
-  "packageManager": "pnpm@10.34.9"
+  "packageManager": "pnpm@10.34.9",
+  "cloudflare": {
+    "bindings": {
+      "TINA_CLIENT_ID": {
+        "description": "Client ID from your project at app.tina.io. Also add it as a build variable (Worker > Settings > Build > Build Variables and Secrets) so the build can use it."
+      },
+      "TINA_TOKEN": {
+        "description": "Read-only token from your project at app.tina.io. Also add it as a build variable (Worker > Settings > Build > Build Variables and Secrets) so the build can use it."
+      },
+      "TINA_BRANCH": {
+        "description": "Optional. The branch TinaCMS edits. Leave empty to use the branch Cloudflare builds."
+      }
+    }
+  }
 }
