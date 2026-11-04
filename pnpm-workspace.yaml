@@ -1,3 +1,6 @@
+# `tinacms build` bundles the /admin app and needs more than the ~2 GB default
+# heap that Node picks on 8 GB build machines such as Cloudflare Workers Builds.
+nodeOptions: --max-old-space-size=4096
 onlyBuiltDependencies:   # pnpm 10
   - better-sqlite3
   - core-js
