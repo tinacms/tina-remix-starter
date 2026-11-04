@@ -56,9 +56,6 @@
       },
       "TINA_TOKEN": {
         "description": "Read-only token from your project at app.tina.io. Also add it as a build variable (Worker > Settings > Build > Build Variables and Secrets) so the build can use it."
-      },
-      "TINA_BRANCH": {
-        "description": "Optional. The branch TinaCMS edits. Leave empty to use the branch Cloudflare builds."
       }
     }
   }

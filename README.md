@@ -27,13 +27,15 @@ Open [http://localhost:5173](http://localhost:5173) with your browser to see the
 
 ### Building the Starter Locally (Using the hosted content API)
 
-Replace the `.env.example`, with `.env`
+Replace the `.env.example`, with `.env`, and add `TINA_BRANCH`:
 
 ```
 TINA_CLIENT_ID=<get this from the project you create at app.tina.io>
 TINA_TOKEN=<get this from the project you create at app.tina.io>
 TINA_BRANCH=<Specify the branch with Tina configured>
 ```
+
+`.env.example` leaves out `TINA_BRANCH` because the Deploy to Cloudflare button asks for every value in it, and Cloudflare builds set the branch on their own.
 
 Build the project:
 
@@ -67,7 +69,7 @@ In every case, add the `TINA_CLIENT_ID` and `TINA_TOKEN` values from your [app.t
 
 Before your first Cloudflare deploy, add `TINA_CLIENT_ID` and `TINA_TOKEN` as **build variables**: in the Cloudflare dashboard, open your Worker > Settings > Build > Build Variables and Secrets. Worker secrets (under Variables and Secrets) are not visible to the build. Until the build variables exist, the build stops with a message that lists the missing ones. Add them, then retry the build.
 
-`TINA_BRANCH` is optional. When it is empty, TinaCMS uses the branch that Cloudflare builds.
+TinaCMS edits the branch that Cloudflare builds. To edit a different branch, add a `TINA_BRANCH` build variable.
 
 To deploy from your own machine instead:
 
