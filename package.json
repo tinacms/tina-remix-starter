@@ -48,15 +48,5 @@
   "engines": {
     "node": "22.x || 24.x"
   },
-  "packageManager": "pnpm@10.34.9",
-  "cloudflare": {
-    "bindings": {
-      "TINA_CLIENT_ID": {
-        "description": "Client ID from your project at app.tina.io. Also add it as a build variable (Worker > Settings > Build > Build Variables and Secrets) so the build can use it."
-      },
-      "TINA_TOKEN": {
-        "description": "Read-only token from your project at app.tina.io. Also add it as a build variable (Worker > Settings > Build > Build Variables and Secrets) so the build can use it."
-      }
-    }
-  }
+  "packageManager": "pnpm@10.34.9"
 }

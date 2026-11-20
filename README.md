@@ -35,7 +35,7 @@ TINA_TOKEN=<get this from the project you create at app.tina.io>
 TINA_BRANCH=<Specify the branch with Tina configured>
 ```
 
-`.env.example` leaves out `TINA_BRANCH` because the Deploy to Cloudflare button asks for every value in it, and Cloudflare builds set the branch on their own.
+`.env.example` has its lines commented out and leaves out `TINA_BRANCH` because the Deploy to Cloudflare button asks for every uncommented value in it, and Cloudflare builds set the branch on their own.
 
 Build the project:
 
