@@ -1,7 +1,7 @@
-import { json, type LoaderFunction, type MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "react-router";
 import { tinaField, useTina } from "tinacms/dist/react";
 import client from "tina/__generated__/client";
-import { useLoaderData } from "@remix-run/react";
+import { useLoaderData } from "react-router";
 import type { PageQuery } from "tina/__generated__/types";
 
 export const meta: MetaFunction = () => {
@@ -11,10 +11,8 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export const loader: LoaderFunction = async () => {
-  const response = await client.queries.page({ relativePath: "index.mdx" });
-  return json(response);
-};
+export const loader = async () =>
+  client.queries.page({ relativePath: "index.mdx" });
 
 // Icon object list.
 const Icon = {
@@ -121,13 +119,13 @@ export default function Index() {
           </h1>
           <div className="h-[144px] w-[434px]">
             <img
-              data-tina-field={tinaField(page, "logo.light")}
+              data-tina-field={tinaField(page.logo, "light")}
               src={page.logo?.light || "#"}
               alt="Remix"
               className="block w-full dark:hidden"
             />
             <img
-              data-tina-field={tinaField(page, "logo.dark")}
+              data-tina-field={tinaField(page.logo, "dark")}
               src={page.logo?.dark || "#"}
               alt="Remix"
               className="hidden w-full dark:block"
@@ -142,7 +140,7 @@ export default function Index() {
             {page.links?.map((link, index) => (
               <li
                 key={link?.url || "#"}
-                data-tina-field={tinaField(page, `links.${index}`)}
+                data-tina-field={tinaField(page, "links", index)}
               >
                 <a
                   className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
@@ -150,7 +148,7 @@ export default function Index() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {link?.icon ? Icon[link?.icon] : null}
+                  {link?.icon ? Icon[link.icon as keyof typeof Icon] : null}
                   {link?.title}
                 </a>
               </li>

@@ -1,0 +1,9 @@
+// Used only by Cloudflare builds (Workers Builds, or DEPLOY_ADAPTER=cloudflare).
+// build/client, including the TinaCMS /admin bundle, is uploaded as static
+// assets, so those files are served before the Worker runs.
+{
+  "name": "tina-remix-starter",
+  "main": "./workers/app.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"]
+}

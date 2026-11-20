@@ -71,11 +71,14 @@ module.exports = {
         "plugin:import/recommended",
         "plugin:import/typescript",
       ],
+      rules: {
+        "import/no-unresolved": ["error", { ignore: ["^virtual:"] }],
+      },
     },
 
     // Node
     {
-      files: [".eslintrc.cjs"],
+      files: [".eslintrc.cjs", "scripts/**"],
       env: {
         node: true,
       },

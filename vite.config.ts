@@ -1,16 +1,16 @@
-import { vitePlugin as remix } from "@remix-run/dev";
-import { defineConfig } from "vite";
+import { reactRouter } from "@react-router/dev/vite";
+import { defineConfig, type PluginOption } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
+import { getDeployHost } from "./deploy-host";
+
+// The Cloudflare plugin is imported only for Cloudflare builds, so local dev
+// and other hosts never load wrangler or workerd.
+async function hostPlugins(): Promise<PluginOption[]> {
+  if (getDeployHost() !== "cloudflare") return [];
+  const { cloudflare } = await import("@cloudflare/vite-plugin");
+  return [cloudflare({ viteEnvironment: { name: "ssr" } })];
+}
 
 export default defineConfig({
-  plugins: [
-    remix({
-      future: {
-        v3_fetcherPersist: true,
-        v3_relativeSplatPath: true,
-        v3_throwAbortReason: true,
-      },
-    }),
-    tsconfigPaths(),  
-  ],
+  plugins: [...(await hostPlugins()), reactRouter(), tsconfigPaths()],
 });
